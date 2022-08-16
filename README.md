@@ -73,7 +73,7 @@ The primary learning objective of this project was to become familiar with both 
 
 * One area of improvement is in the embeddings used for this project. Pre-trained word vectors & BERT models were used, however, these may not be suitable for problems relating to technical documentation (which contain a large amount of uncommon english words and domain-specific acronyms). The performance of the model may improve if resources were available to take advantage of the ~50 yrs of U.S. Patents text available online.
 
-* Hyperparameter tuning was performed using RandomizedSearchCV and GridSearchCV with limited parameter ranges due to the computational resources available. An improvement would be to use a more robust, less computationally intensive hyperparameter tuning methodology, such as Bayesian Optimization, to squeeze out a bit more performance.
+* Hyperparameter tuning was performed using RandomizedSearchCV and GridSearchCV (a basic coarse to fine approach) with limited parameter ranges due to the computational resources and time available. An improvement would be to use a more robust, less computationally intensive hyperparameter tuning methodology, such as Bayesian Optimization and/or Evolutionary Optimization, to squeeze out a bit more performance. Instead of a blind, arbitrary GridSearch, one can also run a Design of Experiments to more efficiently fill in the parameter space. 
 
 * A base BERT model was used in this project. As with most ML problems, scaling up will most likely improve accuracy. More attention heads!
 
